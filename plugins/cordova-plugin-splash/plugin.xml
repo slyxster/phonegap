@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-splash" version="1.0.0">
+    <name>Android Plugin Splash</name>
+    <description>Plugin to set Android splash for Cordova/Ionic applications</description>
+    <license>MIT</license>
+    <author>Bruno Facundo</author>
+    <keywords>cordova,ionic,android,splash,color,background,theme,styles.xml</keywords>
+
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="merge">
+            <activity android:name="MainActivity" android:theme="@style/CordovaPluginSplashTheme" />
+        </edit-config>
+
+        <source-file src="cordova_plugin_splash_background.xml" target-dir="res/drawable" />
+        <source-file src="cordova_plugin_splash_style.xml" target-dir="res/values" />
+
+        <config-file target="res/values/cordova_plugin_splash_style.xml" parent="/*">
+            <style name="CordovaPluginSplashTheme" parent="@android:style/Theme.NoTitleBar">
+                <item name="android:windowBackground">@drawable/cordova_plugin_splash_background</item>
+                <item name="android:windowFullscreen">true</item>
+            </style>
+        </config-file>
+    </platform>
+</plugin>
