@@ -44,7 +44,7 @@ ul.buttons li i.fa { position: absolute; color: #fff; right: 5px; top: 12px; }
 .result {  margin: 15px 0; padding-bottom: 15px; border: solid 1px #111; }
 .result h1 { font-size: 2.4em; margin: 0; }
 .result div { padding: 20px 15px; font-size: 1.15em; margin: 0; background: #ededed;  height: auto;  }
-.result h2.header { width: 100%; background: #64ba5d; color: white; text-align:center; padding: 0; line-height: 40px; margin-bottom:0px; height: 40px; font-size: 1.5em; }
+.result h2.header { width: 100%; background: #64ba5d; color: white; text-align:center; padding: 0; line-height: 40px; margin-bottom:0px; height: 40px; font-size: .85em; }
 .result .threshold { background: #fff; }
 .result .threshold p { color: #000; font-size: 16px; padding: 10px; width:96%; line-height:18px; font-weight: 500;  }
 .result .threshold strong { text-align: center; display: block; padding-top: 20px; }
